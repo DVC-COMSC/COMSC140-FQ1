@@ -1,57 +1,27 @@
-
-from functools import reduce
-import xlrd
-
-
-def makeList():
-    ##################################################
-    # Make your code
-    ##################################################
-    return students
-
-
-def printList(students):
-    ##################################################
-    # Make your code
-    ##################################################
-
-
-def scoresbySubject(students):
-    ##################################################
-    # Make your code
-    ##################################################
-    return result
-
-
-def gt330(students):
-    ##################################################
-    # Make your code
-    ##################################################
-
-
-def findstudents(students):
-    ##################################################
-    # Make your code
-    ##################################################
-    return result
-
-
-def getAvgList(students):
-    ##################################################
-    # Make your code
-    ##################################################
-    return avglist
+class Names:
+    #################
+    # Implement the class Names
+    pass
 
 
 def main():
-    students = makeList()
-    printList(students)
-    scorelist = scoresbySubject(students)
-    print(scorelist)
-    gtlist = findstudents(students)
-    printList(gtlist)
-    avglist = getAvgList(students)
-    print(avglist)
+    # Test code for your class
+    ca = Names('ca2021.txt')
+    print(ca)
+    fl = Names('fl2021.txt')
+    print(fl)
+    print(ca.nlist)
+    print(fl.nlist)
+
+    if ca > fl:
+        print('The name class ca is greater than fl')
+    else:
+        print('The name class fl is greater than or equal to ca')
+
+    ca.printName('C', 'Count', True)
+    ca.printName('D', 'Name', False)
+    fl.printName('A', 'Count', True)
+    fl.printName('E', 'Name', False)
 
 
 if __name__ == '__main__':
